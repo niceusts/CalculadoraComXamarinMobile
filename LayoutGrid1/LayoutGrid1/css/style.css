@@ -1,0 +1,16 @@
+﻿^ContentPage {
+    background-color: white;
+}
+
+^Button.btnSelectNumber {
+    background-color: pink;
+    border-color: gray;    
+    color: white;
+    font-size: 50;
+}
+^Button.btnSelectOperator {
+    background-color: white;
+    border-color: gray;
+    color: gray;
+    border-width: 1;
+}

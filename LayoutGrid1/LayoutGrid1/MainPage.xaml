@@ -1,9 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
+    
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LayoutGrid1.MainPage">
+    <ContentPage.Resources>
+        <StyleSheet Source="/css/style.css" />
+    </ContentPage.Resources>
 
-    <Grid BackgroundColor="{DynamicResource PrimaryColor}">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="110" />
             <RowDefinition Height="100" />
@@ -21,26 +26,26 @@
 
             <Label x:Name="resultText" FontSize="48" FontAttributes="Bold" BackgroundColor="Black" HorizontalTextAlignment="End" TextColor="White" VerticalTextAlignment="Center" LineBreakMode="NoWrap" Grid.Row="0" Grid.ColumnSpan="4"/>
 
-            <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="White" TextColor="Black" BorderRadius="0"  Text="7" Grid.Row="1" Grid.Column="0" Clicked="OnSelectNumber"/>
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="White" Text="8"  Grid.Row="1" Grid.Column="1" Clicked="OnSelectNumber"/>
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="White" Text="9"  Grid.Row="1" Grid.Column="2" Clicked="OnSelectNumber"/>
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="Orange" Text="/"  Grid.Row="1" Grid.Column="3" Clicked="OnSelectOperator"/>
+        <Button StyleClass="btnSelectNumber"  Text="7" Grid.Row="1" Grid.Column="0" Clicked="OnSelectNumber"/>
+        <Button StyleClass="btnSelectNumber"  Text="8"  Grid.Row="1" Grid.Column="1" Clicked="OnSelectNumber"/>
+        <Button StyleClass="btnSelectNumber"  Text="9"  Grid.Row="1" Grid.Column="2" Clicked="OnSelectNumber"/>
+        <Button StyleClass="btnSelectOperator" Text="/"  Grid.Row="1" Grid.Column="3" Clicked="OnSelectOperator"/>
 
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="White" Text="4" Grid.Row="2" Grid.Column="0" Clicked="OnSelectNumber"/>
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="White" Text="5"  Grid.Row="2" Grid.Column="1" Clicked="OnSelectNumber"/>
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="White" Text="6"  Grid.Row="2" Grid.Column="2" Clicked="OnSelectNumber"/>
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="Orange" Text="x"  Grid.Row="2" Grid.Column="3" Clicked="OnSelectOperator"/>
+        <Button StyleClass="btnSelectNumber" Text="4" Grid.Row="2" Grid.Column="0" Clicked="OnSelectNumber"/>
+        <Button StyleClass="btnSelectNumber" Text="5"  Grid.Row="2" Grid.Column="1" Clicked="OnSelectNumber"/>
+        <Button StyleClass="btnSelectNumber" Text="6"  Grid.Row="2" Grid.Column="2" Clicked="OnSelectNumber"/>
+        <Button StyleClass="btnSelectOperator" Text="x"  Grid.Row="2" Grid.Column="3" Clicked="OnSelectOperator"/>
 
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="White" Text="1" Grid.Row="3" Grid.Column="0" Clicked="OnSelectNumber"/>
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="White" Text="2"  Grid.Row="3" Grid.Column="1" Clicked="OnSelectNumber"/>
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="White" Text="3"  Grid.Row="3" Grid.Column="2" Clicked="OnSelectNumber"/>
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="Orange" Text="-"  Grid.Row="3" Grid.Column="3" Clicked="OnSelectOperator"/>
+        <Button StyleClass="btnSelectNumber"  Text="1" Grid.Row="3" Grid.Column="0" Clicked="OnSelectNumber"/>
+        <Button StyleClass="btnSelectNumber"  Text="2"  Grid.Row="3" Grid.Column="1" Clicked="OnSelectNumber"/>
+        <Button StyleClass="btnSelectNumber"  Text="3"  Grid.Row="3" Grid.Column="2" Clicked="OnSelectNumber"/>
+        <Button StyleClass="btnSelectOperator" Text="-"  Grid.Row="3" Grid.Column="3" Clicked="OnSelectOperator"/>
 
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="White" Text="0" Grid.Row="4" Grid.ColumnSpan="3" Clicked="OnSelectNumber"/>
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="Orange" Text="+"  Grid.Row="4" Grid.Column="3" Clicked="OnSelectOperator"/>
+        <Button StyleClass="btnSelectNumber" Text="0" Grid.Row="4" Grid.ColumnSpan="3" Clicked="OnSelectNumber"/>
+        <Button StyleClass="btnSelectOperator" Text="+"  Grid.Row="4" Grid.Column="3" Clicked="OnSelectOperator"/>
 
             <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="LightGray" Text="C" Grid.Row="5" Grid.Column="0" Clicked="OnClear" />
-        <Button BorderColor="Gray" BorderWidth="0.1" BackgroundColor="Orange" Text="="  Grid.Row="5"  Grid.Column="1" Grid.ColumnSpan="3" Clicked="OnCalculator"/>
+        <Button StyleClass="btnSelectOperator" Text="="  Grid.Row="5"  Grid.Column="1" Grid.ColumnSpan="3" Clicked="OnCalculator"/>
 
     </Grid>
 
